@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,19 +16,19 @@ public class Runner {
         scottishIslands.add("Tresco");
 
 //        1. Add "Coll" to the end of the list
-        scottishIslands.add("Coll") ;
+        scottishIslands.add("Coll");
 
 //        2. Add "Tiree" to the start of the list
-        scottishIslands.add(0, "Tiree") ;
+        scottishIslands.add(0, "Tiree");
 
 //        3. Add "Islay" after "Jura" and before "Mull"
-        scottishIslands.add(2, "Islay") ;
+        scottishIslands.add(2, "Islay");
 
 //        4. Print out the index position of "Skye"
         System.out.println(scottishIslands.indexOf("Skye"));
 
 //        5. Remove "Tresco" from the list by name
-        scottishIslands.remove("Tresco") ;
+        scottishIslands.remove("Tresco");
 
 //        6. Remove "Arran" from the list by index
         scottishIslands.remove(5);
@@ -36,7 +37,7 @@ public class Runner {
         System.out.println(scottishIslands.size());
 
 //        8. Sort the list alphabetically
-           Collections.sort(scottishIslands);
+        Collections.sort(scottishIslands);
 
 //        9. Print out all the islands using a for loop
         for (String island : scottishIslands) {
@@ -51,25 +52,83 @@ public class Runner {
         System.out.println("numbers: " + numbers);
 
 //        1. Print out a list of the even integers
-       int evenNumbers [] = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7} ;
+        int evenNumbers[] = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
         System.out.println("Even numbers:");
-        for (int i=0 ; i< evenNumbers.length; i++) {
-            if (evenNumbers [i] % 4 ==2) {
+        for (int i = 0; i < evenNumbers.length; i++) {
+            if (evenNumbers[i] % 2 == 0) {
                 System.out.println(evenNumbers[i]);
             }
         }
 
 //        2. Print the difference between the largest and smallest value
+        int[] arrayNumbers = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
+        System.out.println("First Set of Arrays:" + Arrays.toString(arrayNumbers));
+        int max_value = arrayNumbers[0];
+        int min_value = arrayNumbers[0];
+        for (int i = 0; i < arrayNumbers.length; i++) {
+            if (arrayNumbers[i] > max_value)
+                max_value = arrayNumbers[i];
+            else if (arrayNumbers[i] < min_value)
+                min_value = arrayNumbers[i];
+        }
+        System.out.println("Difference between the largest and smallest value is:" + (max_value - min_value));
 
-        
-//        3. Print True if the list contains a 1 next to a 1 somewhere.
+        //    3. Print True if the list contains a 1 next to a 1 somewhere.
+        boolean found = false;
+
+        for (int i = 0; i < numbers.size(); i++) {
+            if (numbers.get(i) == 1 && numbers.get(i+1) == 1) {
+                found = true;
+                break;
+            }
+        }
+
+        System.out.println("List contains a 1 next to a 1: " + found);
+
+
+
 //        4. Print the sum of the numbers,
-//        5. Print the sum of the numbers...
+//        {
+//            int[] sumNumbers = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
+//            {
+//                int sum = 0;
+//                for (int i : sumNumbers)
+//                    sum += i;
+//                System.out.println("The sum is:" + sum);
+//            }
+//        }
+//    }
+
+    //        5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count.
 //
 //          So [2, 7, 13, 2] would have sum of 9.
 
+
+//    int newNumber[] = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
+//
+//    int newSum = 0;
+//    for (int i = 0; i < newNumber ; i++){
+//        if (newNumber.get(i) ==
+
     }
 
-}
+
+    //      for(int i = 0; i < colours.size(); i++){
+// //            if (colours.get(i).equals("green")){
+// //                continue;
+// //            }
+// //            System.out.println(colours.get(i) );
+
+
+
+    }
+
+
+
+
+
+
+
+
