@@ -88,18 +88,18 @@ public class Runner {
 
 
 //        4. Print the sum of the numbers,
-//        {
-//            int[] sumNumbers = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
-//            {
-//                int sum = 0;
-//                for (int i : sumNumbers)
-//                    sum += i;
-//                System.out.println("The sum is:" + sum);
-//            }
-//        }
-//    }
+       {
+           int[] sumNumbers = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
+           {
+               int sum = 0;
+               for (int i : sumNumbers)
+                   sum += i;
+               System.out.println("The sum is:" + sum);
+           }
+       }
+   }
 
-    //        5. Print the sum of the numbers...
+//    5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count.
 //
