@@ -77,7 +77,7 @@ public class Runner {
         boolean found = false;
 
         for (int i = 0; i < numbers.size(); i++) {
-            if (numbers.get(i) == 1 && numbers.get(i+1) == 1) {
+            if (numbers.get(i) == 1 && numbers.get(i + 1) == 1) {
                 found = true;
                 break;
             }
@@ -86,24 +86,50 @@ public class Runner {
         System.out.println("List contains a 1 next to a 1: " + found);
 
 
-
 //        4. Print the sum of the numbers,
-       {
-           int[] sumNumbers = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
-           {
-               int sum = 0;
-               for (int i : sumNumbers)
-                   sum += i;
-               System.out.println("The sum is:" + sum);
-           }
-       }
-   }
+        {
+            int[] sumNumbers = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
+            {
+                int sum = 0;
+                for (int i : sumNumbers)
+                    sum += i;
+                System.out.println("The sum is:" + sum);
+            }
+        }
 
-//    5. Print the sum of the numbers...
+
+        //    5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count.
 //
 //          So [2, 7, 13, 2] would have sum of 9.
+
+        int[] vNumbers = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
+
+
+        int ans = 0;
+        for (int vNumber : vNumbers) {
+            if (vNumber == 13) {
+                break;
+            } else {
+                ans += vNumber;
+            }
+
+
+        }
+        System.out.println("The sum without 13:" + ans);
+
+
+    }
+}
+
+// for (int i; vNumbers)
+//     if(i >= 8){
+//         continue;
+//     } else {
+//         ans += i;
+// System.out.println("The answer is:" + ans);
+//     }
 
 
 //    int newNumber[] = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
@@ -112,18 +138,13 @@ public class Runner {
 //    for (int i = 0; i < newNumber ; i++){
 //        if (newNumber.get(i) ==
 
-    }
-
-
-    //      for(int i = 0; i < colours.size(); i++){
-// //            if (colours.get(i).equals("green")){
-// //                continue;
-// //            }
-// //            System.out.println(colours.get(i) );
 
 
 
-    }
+
+
+
+
 
 
 
