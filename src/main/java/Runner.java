@@ -123,21 +123,6 @@ public class Runner {
     }
 }
 
-// for (int i; vNumbers)
-//     if(i >= 8){
-//         continue;
-//     } else {
-//         ans += i;
-// System.out.println("The answer is:" + ans);
-//     }
-
-
-//    int newNumber[] = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7};
-//
-//    int newSum = 0;
-//    for (int i = 0; i < newNumber ; i++){
-//        if (newNumber.get(i) ==
-
 
 
 
