@@ -51,10 +51,17 @@ public class Runner {
         System.out.println("numbers: " + numbers);
 
 //        1. Print out a list of the even integers
-
-
+       int evenNumbers [] = {1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7} ;
+        System.out.println("Even numbers:");
+        for (int i=0 ; i< evenNumbers.length; i++) {
+            if (evenNumbers [i] % 4 ==2) {
+                System.out.println(evenNumbers[i]);
+            }
+        }
 
 //        2. Print the difference between the largest and smallest value
+
+        
 //        3. Print True if the list contains a 1 next to a 1 somewhere.
 //        4. Print the sum of the numbers,
 //        5. Print the sum of the numbers...
